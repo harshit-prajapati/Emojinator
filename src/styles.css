@@ -69,18 +69,18 @@
   display: flex;
 }
 .t-left {
-  width: 40%;
+  width: 42%;
   min-width: 320px;
 }
 .t-right {
-  width: 60%;
+  width: 58%;
   min-width: 320px;
   font-size: 2rem;
   text-align: center;
 }
 .emojiList {
   font-size: 2rem;
-  padding: 0.5rem;
+  padding-right: 0.6rem;
   cursor: pointer;
 }
 /* for smaller devices*/

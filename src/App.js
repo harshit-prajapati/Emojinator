@@ -2,16 +2,53 @@ import React, { useState } from "react";
 import "./styles.css";
 
 const emojiDictionary = {
-  "😊": "Smiling",
-  "😳": "disbelief",
-  "😔": "sad",
-  "🥡": "takeout box",
-  "❤️": "love",
-  "😑": "annoyance",
-  "😵": "dizzy face",
+  "😀": "Grinning Face",
+  "😂": "Face with Tears of Joy",
+  "🤣": "Rolling on the Floor Laughing",
+  "😉": "Winking Face",
+  "😊": "Smiling Face with Smiling Eyes",
+  "🥰": "Smiling Face with Hearts",
+  "😘": "Face Blowing a Kiss",
+  "🤗": "Hugging Face",
+  "😑": "Expressionless Face",
+  "😒": "Unamused Face",
+  "🤤": "Drooling Face",
+  "🤯": "Exploding Head",
   "😕": "Confused Face",
-  "🥴":
-    "Woozy Face" /** add some more to show how the app now expands when there's new data */
+  "😟": "Worried Face",
+  "🙁": "Slightly Frowning Face",
+  "😲": "Astonished Face",
+  "😳": "Flushed Face",
+  "🥺": "Pleading Face",
+  "😭": "Loudly Crying Face",
+  "😱": "Face Screaming in Fear",
+  "😖": "Confounded Face",
+  "😣": "Persevering Face",
+  "😞": "Disappointed Face",
+  "😡": "Pouting Face",
+  "😠": "Angry Face",
+  "🤬": "Face with Symbols on Mouth",
+  "😑": "annoyance",
+  "😵": "Dizzy Face",
+  "😕": "Confused Face",
+  "🥴": "Woozy Face",
+  "👋": "Waving Hand",
+  "🤏": "Pinching Hand",
+  "🤟": "Love-You Gesture",
+  "🤘": "Sign of the Horns",
+  "🤙": "Call Me Hand",
+  "🖕": "Middle Finger",
+  "✊": "Raised Fist",
+  "👊": "Oncoming Fist",
+  "👏": "Clapping Hands",
+  "🤝": "Handshake",
+  "🙏": "Folded Hands",
+  "❤️": "Red Heart",
+  "❣️": "Heart Exclamation",
+  "💋": "Kiss Mark",
+  "💯": "Hundred Points"
+  // "💢": "Anger Symbol",
+  /** add some more to show how the app now expands when there's new data */
 };
 const emojis = Object.keys(emojiDictionary);
 
@@ -25,12 +62,11 @@ export default function App() {
     if (inputEmoji in emojiDictionary) {
       setMeaning(emojiDictionary[inputEmoji]);
     } else {
-      setMeaning("failure to recognise this emoji");
+      setMeaning("Emoji not in our database");
     }
   }
 
   function emojiClickHandler(inputEmoji) {
-    // var click_emoji = inputEmoji;
     setMeaning(emojiDictionary[inputEmoji]);
   }
   return (
@@ -70,7 +106,7 @@ export default function App() {
           </div>
           <div className="t-right">
             <h2> {emoji} </h2>
-            {/* <h1> {click_emoji} </h1> */}
+            {/* <h2> {emoji_c} </h2> */}
             <h3> {meaning} </h3>
           </div>
         </div>
