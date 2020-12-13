@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+
+.App {
+  /* font-family: sans-serif; */
+  /* text-align: center; */
+}
+
+.body-container {
+  max-width: 1140px;
+  min-width: 320px;
+  font-family: Poppins;
+  height: auto;
+  margin: auto;
+  margin-top: 24px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Bree Serif", serif;
+}
+
+.salutation {
+  /* margin: auto; */
+  text-align: center;
+}
+
+.hero-header {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  width: 50%;
+  min-width: 320px;
+  /* display: block; */
+}
+
+.hero-img {
+  width: 50%;
+  min-width: 320px;
+  display: block;
+}
+
+.search-section {
+  width: 40%;
+  padding-left: 14.5rem;
+}
+
+.input-emoji {
+  /* padding: auto auto; */
+  width: 200px;
+  height: 30px;
+  border: 1.5px solid black;
+  border-radius: 8px;
+}
+
+.search-btn {
+  margin-top: 5px;
+  background-color: #ffc83d;
+  width: 90px;
+  height: 38px;
+  border: 1px solid #ffc83d;
+  border-radius: 8px;
+  font-family: "Bree Serif", serif;
+  display: none;
+}
+.translate-section {
+  padding-left: 14.5rem;
+  display: flex;
+}
+.t-left {
+  width: 40%;
+  min-width: 320px;
+}
+.t-right {
+  width: 60%;
+  min-width: 320px;
+  font-size: 2rem;
+  text-align: center;
+}
+.emojiList {
+  font-size: 2rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+/* for smaller devices*/
+@media only screen and (max-width: 550px) {
+  div.body-container {
+    max-width: 375px;
+    min-width: 320px;
+    font-family: Poppins;
+    height: auto;
+    /* margin: auto; */
+    margin-top: 24px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Bree Serif", serif;
+    margin-left: -4rem;
+  }
+  div.search-section {
+    width: 40%;
+    padding-left: 4rem;
+  }
+  div.translate-section {
+    padding-left: 0rem;
+    display: flex;
+    flex-direction: column;
+  }
+  div.t-left {
+    /* width: 40%; */
+    min-width: 320px;
+    padding-left: 4rem;
+  }
+  div.t-right {
+    padding-left: 4rem;
+    /* width: 60%; */
+    min-width: 320px;
+    font-size: 2rem;
+    text-align: center;
+  }
+}
